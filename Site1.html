@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        /* Style CSS pour la mise en forme */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Inscription</h2>
+        <form action="votre_script_de_traitement.php" method="post" enctype="multipart/form-data">
+            <label for="pseudo">Pseudo:</label>
+            <input type="text" id="pseudo" name="pseudo" required>
+
+            <label for="mot_de_passe">Mot de passe:</label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="avatar">Avatar:</label>
+            <input type="file" id="avatar" name="avatar">
+            <br>
+            <br>
+
+            <label for="pays">Pays:</label>
+            <select id="Pays" name="Pays" required>
+                <option value="Algerie">Algerie</option>
+                <option value="France">France</option>
+                <option value="Allemagne">Allemagne</option>
+            </select>
+
+            <label for="fruit_prefere">Quelle est votre fruit préféré ?</label>
+            <select id="fruit_prefere" name="fruit_prefere" required>
+                <option value="Orange">Orange</option>
+                <option value="Fraise">Fraise</option>
+                <option value="Poire">Poire</option>
+            </select>
+
+            <label for="Sexe">Civilité:</label>
+            <input type="radio" id="sexe_homme" name="sexe" value="Homme"> <label for="sexe_homme">Homme</label>
+            <input type="radio" id="sexe_femme" name="sexe" value="Femme"> <label for="sexe_femme">Femme</label>
+            <br> 
+            <br>
+
+
+            <label for="ville">Ville:</label>
+            <input type="text" id="ville" name="ville">
+
+            <label for="code_postal">Code postal:</label>
+            <input type="text" id="code_postal" name="code_postal">
+
+            <label for="adresse">Adresse:</label>
+            <input type="text" id="adresse" name="adresse">
+
+            <label for="date_naissance">Date de naissance:</label>
+            <input type="date" id="date_naissance" name="date_naissance">
+            <br> <br>
+
+                <link rel="stylesheet" href="style.css">    <div class="jauge">
+        <div class="jauge-remplissage" id="jauge-remplissage"></div>
+    </div>
+    <input type="range" id="range-input" min="0" max="100" value="50" onchange="updateJauge()">
+    <script src="script.js"></script>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image">
+            <br>
+            <br>
+
+            <label for="telephone">Téléphone:</label>
+            <input type="tel" id="telephone" name="telephone">
+            <br>
+            <br> 
+
+            <label for="recherche">Recherche:</label>
+            <input type="text" id="recherche" name="recherche">
+            <br>
+
+            <label for="couleur">Couleur préférée:</label>
+            <input type="color" id="couleur" name="couleur">
+            <br> <br>
+
+            <label for="Url">Recherche:</label>
+            <input type="text" id="Url" name="Url">
+
+             <label for="Url">Url:</label>
+            <input type="text" id="Url" name="Url">
+
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
+</body>
+</html>
